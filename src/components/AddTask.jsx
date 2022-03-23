@@ -15,6 +15,8 @@ export const AddTask = () => {
 		}
     
 		addTask(newTask)
+
+		setTitle('')
 	}
 
 	return (
