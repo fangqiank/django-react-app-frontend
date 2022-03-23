@@ -8,7 +8,7 @@ export const ENDPOINTS = {
 }
 
 export const createAPIEndpoint = endpoint => {
-	let url = `/api/${endpoint}/`
+	let url = `${process.env.REACT_APP_BACKEND}/api/${endpoint}/`
 
 	return {
 		fetch: () => axios.get(url),
