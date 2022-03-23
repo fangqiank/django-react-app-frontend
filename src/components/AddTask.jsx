@@ -13,7 +13,6 @@ export const AddTask = () => {
 			title,
 			completed: false
 		}
-    
 		addTask(newTask)
 
 		setTitle('')
@@ -27,6 +26,7 @@ export const AddTask = () => {
 					<input 
 						type='text' 
 						name='title' 
+						id='title'
 						value={title} 
 						placeholder='Add Task...' 
 						onChange={e => setTitle(e.target.value)} 
